@@ -1,4 +1,4 @@
-# Angular-cdk-virtual-scroll-viewport
+# Angular-FileOperation
 
 
 * Table with filter, sort and selection.
@@ -9,8 +9,6 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) Angular: 12.0.5
 
 --------------------------------------------------------------------
-
-<img src="/screenshots/Angular-cdk-virtual-scroll-viewport-1.JPG" />
 
 --------------------------------------------------------------------
 
@@ -42,10 +40,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## From Developer
 
 If you liked the repo then kindly support it by giving it a star ⭐
-
-### Contact
-
-
-
-
-
