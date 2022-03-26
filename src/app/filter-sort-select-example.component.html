@@ -1,0 +1,90 @@
+<div class="body-setting font-setting">
+  <div class="row">
+      <div class="col-sm-2 btn_121_section">
+          <button  (click)="$event ? Button121(): null" class="btn_121">Button_121</button>
+      </div>
+      <div class="col-sm-6 gb_section">
+          <div>
+              <fieldset>
+                  <legend>GB Text1</legend>
+                  <div class="d-flex">
+                    <label>label2</label>
+                    <input type="text" id="label_second" name="Label2" #label_second><br><br>
+                  </div>
+                  <div class="d-flex">
+                      <label>label3</label>
+                      <input type="text" id="label_third" name="Label3" #label_third><br><br>
+                  </div>
+                  <div class="d-flex">
+                      <div class="d-flex">
+                          <label>label4</label>
+                          <input type="text" id="label_fourth" name="Label4" #label_fourth><br><br>
+                      </div>
+                      <div>
+                          <button (click)="$event ? process(label_second.value, label_third.value, label_fourth.value): null" class="btn_process">Process</button>
+ 
+                      </div>
+                  </div>
+              </fieldset>
+            </div>
+      </div>
+      <div class="col-sm-3 btn_reset_section">
+        <div *ngFor="let value of displayValue">
+          <p>{{value.input_value}}</p>
+        </div>
+        <div>
+            <button (click)="$event ? Reset(): null" class="btn_reset"  *ngIf="reset_btn_show">Reset</button>
+        </div>
+      </div>
+  </div>
+</div>
+<button class="btn_download" (click)="$event ? download(): null"  *ngIf="show">{{'Download '+select_count +' Selected'}}</button>  
+
+
+<cdk-virtual-scroll-viewport tvsItemSize="48" class="wrapper mat-elevation-z2 table-section">
+  <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+    <!-- Checkbox Column -->
+    <ng-container matColumnDef="select">
+      <th mat-header-cell *matHeaderCellDef class="col-sm" >
+      </th>
+      <td mat-cell *matCellDef="let row" class="col-sm">
+        <mat-checkbox value="after" (change)="checkboxLabel($event,row)">
+        </mat-checkbox>
+      </td>
+    </ng-container>
+
+    <!-- COLUMN_1 Column -->
+    <ng-container matColumnDef="COLUMN_1">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header class="col-sm"> COLUMN_1 </th>
+      <td mat-cell *matCellDef="let element" [style]="returnColumn(element.COLUMN_1.substring(element.COLUMN_1.length-1))" class="col-sm"> {{element.COLUMN_1}} </td>
+    </ng-container>
+
+    <!-- COLUMN_2 Column -->
+    <ng-container matColumnDef="COLUMN_2">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> COLUMN_2 </th>
+      <td mat-cell *matCellDef="let element" [style]="returnColumn(element.COLUMN_1.substring(element.COLUMN_1.length-1))"> {{element.COLUMN_2}} </td>
+    </ng-container>
+
+    <!-- COLUMN_3 Column -->
+    <ng-container matColumnDef="COLUMN_3">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> COLUMN_3 </th>
+      <td mat-cell *matCellDef="let element" [style]="returnColumn(element.COLUMN_1.substring(element.COLUMN_1.length-1))"> {{element.COLUMN_3}} </td>
+    </ng-container>
+
+    <!-- COLUMN_4 Column -->
+    <ng-container matColumnDef="COLUMN_4">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> COLUMN_4 </th>
+      <td mat-cell *matCellDef="let element" [style]="returnColumn(element.COLUMN_1.substring(element.COLUMN_1.length-1))"> {{element.COLUMN_4}} </td>
+    </ng-container>
+
+    <!-- COLUMN_5 Column -->
+    <ng-container matColumnDef="COLUMN_5">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> COLUMN_5 </th>
+      <td mat-cell *matCellDef="let element" [style]="returnColumn(element.COLUMN_1.substring(element.COLUMN_1.length-1))"> {{element.COLUMN_5}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selection.toggle(row)">
+    </tr>
+  </table>
+
+</cdk-virtual-scroll-viewport>

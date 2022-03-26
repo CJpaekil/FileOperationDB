@@ -1,0 +1,198 @@
+.wrapper {
+  height: 300px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  margin-top:30px;
+}
+.table-section
+{
+  margin-top:10px;
+}
+mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+.btn_download
+{
+  background-color: #fff;
+  border-radius: 10px;
+  outline: 0;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+.col-sm {
+  width: 70px;
+}
+
+.body-setting
+{
+    padding:20px 0px;
+}
+.font-setting
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+fieldset 
+{
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 1px solid;
+    
+}
+legend
+{
+    width:23%;
+}
+.btn_121_section
+{
+  margin-right:50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.btn_121
+{
+    color: red;
+    background-color: #00f;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    padding: 5px 10px;
+}
+
+.td_colorsetting0
+{
+  color:red;
+}
+.td_colorsetting1
+{
+  color:green;
+  background-color: red;
+}
+.td_colorsetting2
+{
+  color:blue;
+}
+.btn_process
+{
+    color: green;
+    background-color: #fff;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid green;
+    padding: 0px 10px;
+    margin-left: 5px;
+    height:35px;
+}
+.btn_reset
+{
+    background-color: #fff;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid black;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 1px;
+}
+
+input{
+  width:90%;
+  height:35px;
+  margin-left:10px;
+}
+
+
+@media screen and (max-width: 630px) 
+{
+  .btn_121_section
+  {
+    margin-top:20px;
+  }
+  legend
+{
+    width:33%;
+    font-size:19px;
+}
+.gb_section
+{
+  margin-top:15px;
+}
+.btn_121
+{
+    color: red;
+    background-color: #00f;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    padding: 5px 10px;
+}
+.btn_process
+{
+    color: green;
+    background-color: #fff;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid green;
+    padding: 0px 10px;
+    margin-left: 5px;
+    height:35px;
+}
+.btn_reset
+{
+    background-color: #fff;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+.font-setting
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+}
+.btn_reset_section
+{
+  margin-top:15px;
+}
+input{
+  width:90%;
+  height:25px;
+  margin-left:5px;
+}
+.btn_process
+{
+    color: green;
+    background-color: #fff;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid green;
+    padding: 0px 10px;
+    margin-left: 5px;
+    height:25px;
+}
+.table-section
+{
+  margin-top:10px;
+}
+.td_colorsetting0
+{
+  color:red;
+}
+.td_colorsetting1
+{
+  color:green;
+  background-color: red;
+}
+.td_colorsetting2
+{
+  color:blue;
+}
+}
