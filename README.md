@@ -6,13 +6,6 @@
 * The ng-table-virtual-scroll package provides an opportunity to use Angular Material cdk-virtual-scroll-viewport with mat-table.
 
 
-Reference : 
-
-https://diprokon.github.io/ng-table-virtual-scroll
-
-https://material.angular.io/components/table/api#MatTableDataSource
-
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) Angular: 12.0.5
 
 --------------------------------------------------------------------
@@ -46,19 +39,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-
 ## From Developer
-
-You can get in touch with me on my LinkedIn Profile: [![LinkedIn Link](https://img.shields.io/badge/Connect-Pranam%20Bhat-blue.svg?logo=linkedin&longCache=true&style=social&label=Connect
-)](https://www.linkedin.com/in/pranam-bhat-11670689/)
-
-You can also follow me on GitHub to stay updated about my latest projects: [![GitHub Follow](https://img.shields.io/badge/Connect-Pranam%20Bhat-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/PranamBhat)
 
 If you liked the repo then kindly support it by giving it a star ⭐
 
 ### Contact
 
-Made with :heart: by Pranam Bhat. Connect me on https://www.linkedin.com/in/pranam-bhat-11670689/
 
-For any queries : pranam707@gmail.com
+
+
 
